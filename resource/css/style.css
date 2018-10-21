@@ -1,3 +1,7 @@
+/*--------------------------------*/
+/* BASIC SETUP */
+/*--------------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +22,10 @@ html {
     margin: 0 auto;
 }
 
+/*--------------------------------*/
+/* HEADER */
+/*--------------------------------*/
+
 header {
     background-image: linear-gradient(rgba(77, 77, 77, 0.70), rgba(77, 77, 77, 0.70)), url("img/background.jpg");
     background-position: center;
@@ -28,10 +36,49 @@ header {
 .eurig-text-box {
     position: absolute;
     width: 960px;
-    top: 10%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.logo {
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    padding: 5px 0;
+    border-bottom: 2px solid #e67e22;
+}
+
+/*--------------------------------*/
+/* HEAD LINES */
+/*--------------------------------*/
 
 h1 {
     margin-top: 0;
@@ -42,6 +89,10 @@ h1 {
     letter-spacing: 1px;
     word-spacing: 4px;
 }
+
+/*--------------------------------*/
+/* BUTTONS */
+/*--------------------------------*/
 
 .btn:link,
 .btn:visited{
