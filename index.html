@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="resource/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet">
     <title>BoardGameCollection</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
 </head>
 <body>
-<div id="app">
-    {{ info }}
-</div>
-<script>getGamesForUserFromFB('Eurig')</script>
+    <header>
+        <div class="eurig-text-box">
+            <h1>Eurig's Board Game Collection</h1>
+            <a class="btn btn-full" href="#">Collection</a>
+            <a class="btn btn-ghost" href="#">Search</a>
+            <a class="btn btn-login" href="#">Login</a>
+        </div>
+    </header>
 </body>
 </html>

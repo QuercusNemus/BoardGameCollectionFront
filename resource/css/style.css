@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: aliceblue;
+    color: #4e4c4d;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(77, 77, 77, 0.70), rgba(77, 77, 77, 0.70)), url("img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.eurig-text-box {
+    position: absolute;
+    width: 960px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 200px;
+    border: 1px solid #e67e22;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+    margin-right: 15px;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background-color: #cf6d17;
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.btn-login:link,
+.btn-login:visited {
+    float: right;
+}
