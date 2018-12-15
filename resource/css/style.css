@@ -26,7 +26,7 @@ html {
 /* HEADER */
 /*--------------------------------*/
 
-header {
+html {
     background-image: linear-gradient(rgba(77, 77, 77, 0.70), rgba(77, 77, 77, 0.70)), url("img/background.jpg");
     background-position: center;
     background-size: cover;
