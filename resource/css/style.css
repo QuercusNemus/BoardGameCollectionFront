@@ -8,18 +8,17 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: aliceblue;
-    color: #4e4c4d;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
-}
-
 .row {
     max-width: 960px;
     margin: 0 auto;
+}
+
+html {
+    background-image: linear-gradient(rgba(77, 77, 77, 0.70), rgba(77, 77, 77, 0.70)), url("img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 /*--------------------------------*/
@@ -27,10 +26,7 @@ html {
 /*--------------------------------*/
 
 header {
-    background-image: linear-gradient(rgba(77, 77, 77, 0.70), rgba(77, 77, 77, 0.70)), url("img/background.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+    margin-bottom: 75px;
 }
 
 .eurig-text-box {
