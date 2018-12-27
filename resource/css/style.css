@@ -134,3 +134,19 @@ h1 {
 .btn-login:visited {
     float: right;
 }
+
+/*--------------------------------*/
+/* CONTENT */
+/*--------------------------------*/
+
+.main-grid-conatiner {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 95%;
+    height: 500px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
