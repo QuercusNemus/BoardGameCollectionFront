@@ -142,7 +142,7 @@ h1 {
 .main-grid-conatiner {
     margin: 0 auto;
     margin-top: 50px;
-    width: 95%;
+    width: 100%;
     height: 500px;
 }
 
@@ -150,3 +150,64 @@ h1 {
     width: 0px;
     background: transparent;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 10px;
+    justify-items: center;
+    margin-top: 150px;
+  }
+  .grid-item {
+    background-color: rgba(189, 189, 189, 0.603);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .grid-container img{
+      padding: 5px;
+      border-radius: 10%;
+  }
+  
+  .grid-container p{
+      overflow: scroll;
+      padding: 5px;
+      font-size: 15px;
+      height: 100px;
+      margin: 5px;
+      text-align: justify;
+  }
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+  }
+  
+  .game-box{
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .game-img {
+      grid-column: 1 / 3;
+      grid-row: 1;
+  }
+  
+  .game-text {
+      grid-column: 1 / 3;
+      grid-row: 2;
+  }
+  
+  .player-count {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row: 3;
+      width: 40%
+  }
+  
+  .playing-time {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row: 3;
+      width: 40%
+  }
