@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="resource/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="resource/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resource/css/style.css">
+    <link  type="text/javascript" src="resource/js/script.js">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet">
     <title>BoardGameCollection</title>
 </head>
@@ -27,7 +28,7 @@
     <div class="grid-container">
             <div class="grid-item">
                 <div class="game-box">
-                        <img class="game-img" src="https://cf.geekdo-images.com/itemrep/img/xW22wt5_wk_8sWLsVR_5E4t2v-g=/fit-in/246x300/pic3122349.jpg" alt="Italian Trulli">
+                        <img class="game-img" id="myBtn" src="https://cf.geekdo-images.com/itemrep/img/xW22wt5_wk_8sWLsVR_5E4t2v-g=/fit-in/246x300/pic3122349.jpg" alt="Italian Trulli">
                         <h2 class="game-name">Arkham Horror</h2>
                         <div class="inner-game-box">
                             <p class="player-count">1-8 Players</p>
@@ -100,5 +101,31 @@
                 </div> 
             </div>
           </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Arhamn Horror</h2>
+      </div>
+      <div class="modal-body">
+        <img src="https://cf.geekdo-images.com/itemrep/img/xW22wt5_wk_8sWLsVR_5E4t2v-g=/fit-in/246x300/pic3122349.jpg" alt="Italian Trulli">  
+        <p>Some text in the Modal Body</p>
+        <p>The year is 1926, and it is the height of the Roaring Twenties. Flappers dance till dawn in smoke-filled speakeasies drinking alcohol supplied by rum runners and the mob. It's a celebration to end all celebrations in the aftermath of the war to end all wars.
+                Yet a dark shadow grows in the city of Arkham. Alien entities known as Ancient Ones lurk in the emptiness beyond space and time, writhing at the gates between worlds. These gates have begun to open and must be closed before the Ancient Ones make our world their ruined domination.
+                Only a handful of investigators stand against the Arkham Horror. Will they Prevail?
+                Arkham Horror is a cooperative adventure game themed around H.P Lovecraft's Cthulhu Mythos. Players choose from 16 Investigators and take to the streets of Arkham. Before the game, one of the eight Ancient Ones is chosen and it's up to the Investigators to prevent it from breaking into our world. During the course of the game, players will upgrade their characters by acquiring skills, allies, items, weapons, and spells. It's up to the players to clean out the streets of Arkham by fighting many different types of monsters, but their main goal is to close portals to other dimensions that are opening up around town. With too many portals open the Ancient One awakens and the players only have one last chance to save the world. Defeat the Ancient One in combat!</p>
+      </div>
+      <div class="modal-footer">
+        <h3>Designer Richard Launius, Kevin Wilson</h3>
+      </div>
+    </div>
+  
+  </div>
+
+<script src="resource/js/script.js"></script>
 </body>
 </html>
