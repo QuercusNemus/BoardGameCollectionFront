@@ -23,3 +23,26 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+var fetchButton = document.getElementById('fetch');
+
+fetchButton.onclick = function() {
+  const uri = 'http://127.0.0.1:8080/api/collection/read';
+
+  var myHeaders = new Headers();
+      myHeaders.append("userName", "Eurig");
+
+  var myInit = { method: 'GET',
+              headers: myHeaders,
+              mode: 'cors',
+              cache: 'default'};
+
+fetch(uri,  myInit)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(JSON.stringify(myJson));
+  });
+}
+
