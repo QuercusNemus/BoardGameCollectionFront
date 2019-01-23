@@ -21,19 +21,30 @@
         </nav>
         <div class="eurig-text-box">
             <h1>𝚺urìg's Board Game Collection</h1>
-            <a class="btn btn-full" id="fetchCollection" href="#">Collection</a>
+            <a class="btn btn-full" id="fetchCollectionBtn" href="#">Collection</a>
             <a class="btn btn-ghost" href="#">Search</a>
             <a class="btn btn-login" href="#">Login</a>
         </div>
     </header>
-    <div class="grid-container">
+    <div class="grid-container" id="fetchCollection-1">
         <div class="grid-item" id="myBtn">
             <img class="game-img"  src="https://cf.geekdo-images.com/itemrep/img/xW22wt5_wk_8sWLsVR_5E4t2v-g=/fit-in/246x300/pic3122349.jpg" alt="Italian Trulli">
-            <h2 class="game-name">Arkham Horror</h2>
+            <h2 class="game-name" >{{items[0].primaryGameName}}</h2>
             <div class="inner-game-box">
-                <p class="player-count">1-8 Players</p>
-                <p class="game-time">120-360 Min</p>            
+                <p class="player-count" >{{items[0].minPlayers}} - {{items[0].maxPlayers}} Players</p>
+                <p class="game-time" >{{items[0].minPlaytime}} - {{items[0].maxPlaytime}} Min</p>            
             </div>           
+        </div>
+    </div>
+
+    <div v-for="item in items" class="grid-container" id="fetchCollection-1">
+        <div  class="grid-item" id="myBtn">
+            <img class="game-img"  src="https://cf.geekdo-images.com/itemrep/img/xW22wt5_wk_8sWLsVR_5E4t2v-g=/fit-in/246x300/pic3122349.jpg" alt="Italian Trulli">
+            <h2 class="game-name" >{{items.primaryGameName}}</h2>
+            <div class="inner-game-box">
+                <p class="player-count" >{{item.minPlayers}} - {{item.maxPlayers}} Players</p>
+                <p class="game-time" >{{item.minPlaytime}} - {{item.maxPlaytime}} Min</p>            
+            </div>
         </div>
     </div>
 

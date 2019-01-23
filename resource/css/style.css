@@ -201,6 +201,8 @@ h1 {
   .game-img {
       grid-column: 1 / 3;
       grid-row: 1;
+      padding: 5px;
+      border-radius: 10%;
   }
   
   .game-text {

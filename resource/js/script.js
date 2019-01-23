@@ -24,21 +24,24 @@ window.onclick = function(event) {
   }
 }
 
-var fetchCollection = document.getElementById('fetchCollection');
+var fetchCollection = document.getElementById('fetchCollectionBtn');
 var config = {
   headers: {'userName': 'Eurig'}
 };
 
   new Vue({
-    el: '#fetchCollection',
+    el: '#fetchCollection-1',
     data () {
       return {
-        info: null
+        items: null
       }
     },
     mounted () {
       axios
         .get('http://127.0.0.1:8080/api/collection/read', config)        
-        .then(response => (console.log(response)))
+        .then(response => {
+          console.log(response.data[0].primaryGameName)          
+          this.items = response.data       
+          })
     }
   })
