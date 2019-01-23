@@ -33,12 +33,25 @@ var config = {
     el: '#fetchCollection',
     data () {
       return {
-        info: null
+        items: null
       }
     },
     mounted () {
       axios
         .get('http://127.0.0.1:8080/api/collection/read', config)        
-        .then(response => (console.log(response)))
+        .then(response => {
+          console.log(response.data[0].primaryGameName)          
+          this.items = response.data       
+          })
+    }
+  })
+
+  var example1 = new Vue({
+    el: '#example-1',
+    data: {
+      items: [
+        { message: data.items[0].primaryGameName },
+        { message: info[1].primaryGameName }
+      ]
     }
   })
