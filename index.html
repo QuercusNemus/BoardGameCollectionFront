@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="resource/css/style.css">
     <link  type="text/javascript" src="resource/js/script.js">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,600,300italic" rel="stylesheet">
+    
     <title>BoardGameCollection</title>
 </head>
 <body>
@@ -20,85 +21,21 @@
         </nav>
         <div class="eurig-text-box">
             <h1>𝚺urìg's Board Game Collection</h1>
-            <a class="btn btn-full" id="fetch" href="#">Collection</a>
+            <a class="btn btn-full" id="fetchCollection" href="#">Collection</a>
             <a class="btn btn-ghost" href="#">Search</a>
             <a class="btn btn-login" href="#">Login</a>
         </div>
     </header>
     <div class="grid-container">
-            <div class="grid-item" id="myBtn">
-                    <img class="game-img"  src="https://cf.geekdo-images.com/itemrep/img/xW22wt5_wk_8sWLsVR_5E4t2v-g=/fit-in/246x300/pic3122349.jpg" alt="Italian Trulli">
-                    <h2 class="game-name">Arkham Horror</h2>
-                    <div class="inner-game-box">
-                        <p class="player-count">1-8 Players</p>
-                        <p class="game-time">120-360 Min</p>            
-                    </div>           
-            </div>
-            <div class="grid-item">
-                <img src="https://cf.geekdo-images.com/itemrep/img/t-qEZq129XTJ9eL3Ba3zjK65E8I=/fit-in/246x300/pic4385726.jpg" alt="Italian Trulli">
-                <h2>Tainted Grail </h2>
-                <div class="inner-game-box">
-                    <p class="player-count">1-4 Players</p>
-                    <p class="game-time">60-120 Min</p>            
-                </div> 
-            </div>
-            <div class="grid-item">
-                <img src="https://cf.geekdo-images.com/itemrep/img/QgAfPNyW6yG0GyLK65XkMLxk4xQ=/fit-in/246x300/pic4195323.jpg" alt="Italian Trulli">
-                <h2>New Frontiers</h2>
-                <div class="inner-game-box">
-                    <p class="player-count">2-5 Players</p>
-                    <p class="game-time">45-75 Min</p>            
-                </div> 
-            </div>
-            <div class="grid-item">
-                <img src="https://cf.geekdo-images.com/itemrep/img/t-qEZq129XTJ9eL3Ba3zjK65E8I=/fit-in/246x300/pic4385726.jpg" alt="Italian Trulli">
-                <h2>Tainted Grail </h2>
-                <div class="inner-game-box">
-                    <p class="player-count">1-4 Players</p>
-                    <p class="game-time">60-120 Min</p>            
-                </div> 
-            </div>
-            <div class="grid-item">
-                <img src="https://cf.geekdo-images.com/itemrep/img/xW22wt5_wk_8sWLsVR_5E4t2v-g=/fit-in/246x300/pic3122349.jpg" alt="Italian Trulli">
-                <h2 class="game-name">Arkham Horror</h2>
-                <div class="inner-game-box">
-                    <p class="player-count">1-8 Players</p>
-                    <p class="game-time">120-360 Min</p>            
-                </div> 
-            </div>
-            <div class="grid-item">
-                <img src="https://cf.geekdo-images.com/itemrep/img/QgAfPNyW6yG0GyLK65XkMLxk4xQ=/fit-in/246x300/pic4195323.jpg" alt="Italian Trulli">
-                <h2>New Frontiers</h2>
-                <div class="inner-game-box">
-                    <p class="player-count">2-5 Players</p>
-                    <p class="game-time">45-75 Min</p>            
-                </div> 
-            </div>
-            <div class="grid-item">
-                <img src="https://cf.geekdo-images.com/itemrep/img/t-qEZq129XTJ9eL3Ba3zjK65E8I=/fit-in/246x300/pic4385726.jpg" alt="Italian Trulli">
-                <h2>Tainted Grail</h2>
-                <div class="inner-game-box">
-                    <p class="player-count">1-4 Players</p>
-                    <p class="game-time">60-120 Min</p>            
-                </div> 
-            </div>
-            <div class="grid-item">
-                <img src="https://cf.geekdo-images.com/itemrep/img/QgAfPNyW6yG0GyLK65XkMLxk4xQ=/fit-in/246x300/pic4195323.jpg" alt="Italian Trulli">
-                <h2>New Frontiers</h2>
-                <div class="inner-game-box">
-                    <p class="player-count">2-5 Players</p>
-                    <p class="game-time">45-75 Min</p>            
-                </div> 
-            </div>
-            <div class="grid-item">
-                <img src="https://cf.geekdo-images.com/itemrep/img/xW22wt5_wk_8sWLsVR_5E4t2v-g=/fit-in/246x300/pic3122349.jpg" alt="Italian Trulli">
-                <h2 class="game-name">Arkham Horror</h2>
-                <div class="inner-game-box">
-                    <p class="player-count">1-8 Players</p>
-                    <p class="game-time">120-360 Min</p>            
-                </div> 
-            </div>
-          </div>
+        <div class="grid-item" id="myBtn">
+            <img class="game-img"  src="https://cf.geekdo-images.com/itemrep/img/xW22wt5_wk_8sWLsVR_5E4t2v-g=/fit-in/246x300/pic3122349.jpg" alt="Italian Trulli">
+            <h2 class="game-name">Arkham Horror</h2>
+            <div class="inner-game-box">
+                <p class="player-count">1-8 Players</p>
+                <p class="game-time">120-360 Min</p>            
+            </div>           
+        </div>
+    </div>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -120,10 +57,12 @@
       <div class="modal-footer">
         <h3>Designer Richard Launius, Kevin Wilson</h3>
       </div>
-    </div>
-  
+    </div>  
   </div>
 
-<script src="resource/js/script.js"></script>
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="resource/js/script.js"></script>
 </body>
 </html>

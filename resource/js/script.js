@@ -24,25 +24,21 @@ window.onclick = function(event) {
   }
 }
 
-var fetchButton = document.getElementById('fetch');
+var fetchCollection = document.getElementById('fetchCollection');
+var config = {
+  headers: {'userName': 'Eurig'}
+};
 
-fetchButton.onclick = function() {
-  const uri = 'http://127.0.0.1:8080/api/collection/read';
-
-  var myHeaders = new Headers();
-      myHeaders.append("userName", "Eurig");
-
-  var myInit = { method: 'GET',
-              headers: myHeaders,
-              mode: 'cors',
-              cache: 'default'};
-
-fetch(uri,  myInit)
-  .then(function(response) {
-    return response.json();
+  new Vue({
+    el: '#fetchCollection',
+    data () {
+      return {
+        info: null
+      }
+    },
+    mounted () {
+      axios
+        .get('http://127.0.0.1:8080/api/collection/read', config)        
+        .then(response => (console.log(response)))
+    }
   })
-  .then(function(myJson) {
-    console.log(JSON.stringify(myJson));
-  });
-}
-
