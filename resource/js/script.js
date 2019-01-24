@@ -30,7 +30,7 @@ var config = {
 };
 
   new Vue({
-    el: '#fetchCollection-1',
+    el: '#app',
     data () {
       return {
         items: null
@@ -39,8 +39,7 @@ var config = {
     mounted () {
       axios
         .get('http://127.0.0.1:8080/api/collection/read', config)        
-        .then(response => {
-          console.log(response.data[0].primaryGameName)          
+        .then(response => {         
           this.items = response.data       
           })
     }
